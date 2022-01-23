@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roamcode.securitycheck">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.SecurityCheck">
+        <activity android:name=".WebCam"></activity>
+        <activity android:name=".AccessDocument" />
+        <activity android:name=".RemoteDesktop" />
+        <activity android:name=".LinkedinFinder" />
+        <activity android:name=".AccessFileType" />
+        <activity android:name=".databaseWeakPassword" />
+        <activity android:name=".ActiveDirectory" />
+        <activity android:name=".accessAdminPage" />
+        <activity android:name=".VulReport" />
+        <activity android:name=".MainMenuSecurity" />
+        <activity android:name=".Solutions" />
+        <activity android:name=".WebViewerCheck" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
